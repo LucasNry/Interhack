@@ -18,9 +18,10 @@ body {
   transform: scale(1.1);
 }
 .second {
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 48em;
   background-color: #e0fbfc;
@@ -42,6 +43,7 @@ body {
 .category-button:hover {
   background-color: #fff;
   border-radius: 40%;
+  border: none;
   cursor: pointer;
 }
 .Nav {
@@ -53,15 +55,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-a {
-  font-family: monospace;
-  font-size: 22px;
-  font-weight: bold;
-  color: #ff9900;
-  padding: 0px 15px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
+
 .login {
   background-color: #ff9900;
   border: none;
@@ -80,10 +74,7 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
-a:hover {
-  border-bottom: 2px solid #fff;
-  transform: scale(1.1);
-}
+
 .sign-container {
   display: flex;
 }
@@ -119,16 +110,7 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-.canvas {
-  display: flex;
-  background-color: #fff;
-  border: 6px;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-  height: 33em;
-  flex-direction: row;
-}
+
 .about-container {
   display: flex;
   justify-content: center;
@@ -167,4 +149,131 @@ a:hover {
   background-color: #fff;
   border-radius: 50%;
   padding: 10px;
+}
+
+/* PÁGINA 2 */
+
+.cards-container {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+  justify-items: center;
+  padding: 50px 100px;
+  align-items: center;
+  background-color: #235b75;
+}
+input {
+  margin-top: 2em;
+  justify-self: flex-start;
+  outline: none;
+  border: none;
+  width: 50em;
+  height: 2em;
+  border-radius: 4px;
+  padding: 10px;
+}
+.father {
+  display: flex;
+  flex-direction: row;
+}
+.filters {
+  display: flex;
+  width: 20%;
+  background-color: rgba(240, 152, 52, 0.7);
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 0px;
+}
+.filter-card {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+  font-size: 28px;
+}
+.filter-name {
+  font-family: monospace;
+  padding-left: 0.5em;
+  font-size: 22px;
+}
+.sector-container {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 8em;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 20px;
+}
+.info-titulo {
+  position: absolute;
+  color: black;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.info-descricao {
+  left: 45%;
+  position: absolute;
+  width: 25em;
+  height: 8em;
+  color: black;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.info-bar {
+  background-color: rgb(13, 161, 229);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0.2em;
+  border-radius: 6px;
+  width: auto;
+  color: white;
+  padding: 15px;
+  height: 1em;
+}
+span {
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+/* PÁGINA 3 */
+
+.main-object {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 42.5em;
+  flex-direction: column;
+  justify-items: flex-end;
+  align-items: flex-end;
+  background-color: #235b75;
+}
+.canvas {
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  border: 6px;
+  bottom: 0em;
+  padding: 25px;
+  left: 10%;
+  width: 80%;
+  justify-items: center;
+  align-items: center;
+  height: 38em;
+  flex-direction: column;
+}
+.data-title {
+}
+.chart {
+  border: 1px solid black;
+}
+.data-description {
+  width: 30em;
 }
