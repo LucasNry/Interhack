@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+body {
+}
+.goUp {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 2em;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.goUp:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.second {
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: 2;
+  width: 100%;
+  height: 48em;
+  background-color: #e0fbfc;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+.category-button {
+  width: 8em;
+  padding: 10px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.category-title {
+  color: white;
+  font-size: 86px;
+}
+.category-button:hover {
+  background-color: #fff;
+  border-radius: 40%;
+  cursor: pointer;
+}
+.Nav {
+  padding: 20px 0px;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 1);
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff9900;
+  padding: 0px 15px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.login {
+  background-color: #ff9900;
+  border: none;
+  padding: 10px;
+  width: 5em;
+  margin-right: 10px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.login:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+a:hover {
+  border-bottom: 2px solid #fff;
+  transform: scale(1.1);
+}
+.sign-container {
+  display: flex;
+}
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.logo {
+  width: 12em;
+}
+.icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 42em;
+  justify-content: center;
+  align-items: center;
+}
+.bg-image {
+  position: absolute;
+  opacity: 0.4;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.canvas {
+  display: flex;
+  background-color: #fff;
+  border: 6px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  height: 33em;
+  flex-direction: row;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pizza {
+  position: absolute;
+  right: 15em;
+  width: 12em;
+}
+.about-text {
+  color: white;
+  font-family: monospace;
+  font-size: 84px;
+  font-weight: bold;
+}
+.about-p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: bold;
+  width: 40em;
+}
+.home {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.percentage {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.padlock {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
