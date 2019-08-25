@@ -89,7 +89,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.last-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 14em;
+  height: 9em;
+}
 .login {
   background-color: #ff9900;
   border: none;
@@ -241,6 +248,8 @@ input {
   font-size: 22px;
 }
 .sector-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #fff;
   width: 100%;
@@ -250,7 +259,6 @@ input {
   padding: 20px;
 }
 .info-titulo {
-  position: absolute;
   color: black;
   font-family: "Red Hat Text", sans-serif;
   font-weight: bold;
@@ -259,20 +267,19 @@ input {
 }
 .info-descricao {
   left: 45%;
-  position: absolute;
-  width: 50em;
+  width: 100%;
   top: 10%;
-  height: 8em;
+  height: 4em;
   color: black;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 .info-bar {
   background-color: rgb(13, 161, 229);
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-self: flex-end;
   align-items: center;
   bottom: 1.8em;
   border-radius: 6px;
