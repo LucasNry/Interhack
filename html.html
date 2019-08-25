@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script>
+      let url = "https://0d19b8f7.ngrok.io/api/products";
+      let vaiFuncionar = async urlPar => {
+        let response = await fetch(urlPar);
+        return response.json();
+      };
+      vaiFuncionar(url).then(res => console.log(res.docs[0]));
+    </script>
+  </body>
+</html>
