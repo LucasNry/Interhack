@@ -1,9 +1,34 @@
 let goUp = document.querySelector(".goUp");
 let signIn = document.querySelector("button");
 let buttons = document.querySelectorAll(".category-button");
-let url = "https://71bf409e.ngrok.io//horizontal-plot.png";
+let url = "http://b2c61bb1.ngrok.io/horizontal-plot.png";
 let api = "https://0d19b8f7.ngrok.io/api/products";
 let container = document.querySelector(".canvas");
+let cardTemplate = `<div class="sector-container">
+<a href="./Página3.html"
+  ><p class="info-titulo">
+    Título
+  </p></a
+>
+<p class="info-descricao">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit
+  justo, mattis eu efficitur at, sollicitudin non magna. Praesent in
+  egestas nulla. In hac habitasse platea dictumst. Suspendisse at nisi
+  vel velit tempor sollicitudin id vel odio. Fusce aliquet tempor
+  libero nec commodo.
+</p>
+<div class="info-bar">
+  <img class="contest" src="./eye.png" alt="view" /><span>:</span>
+  <span class="view-count">1232</span>
+  <img src="./warning.png" alt="contest" class="contest" /><span
+    >:</span
+  >
+  <span class="contest-counter">322</span>
+</div>
+</div>`;
+let titles = ["", "", ""];
+let description = ["", "", ""];
+
 try {
   goUp.addEventListener("click", () => {
     window.scrollTo(0, 0);
@@ -20,16 +45,10 @@ buttons.forEach(button => {
   button.addEventListener("onmouseover", () => {});
 });
 
-let fetchData = async url => {
-  let res = await fetch(url);
-  let refinedRes = await res.json();
-  let title = await refinedRes.docs[0].title;
-  return title;
-};
 // console.log(fetchData(api));
 
 container.innerHTML += `<div class="data-container">
-<h1 class="data-title">${fetchData(api)}</h1>
+<h1 class="data-title">${"Titúlo"}</h1>
 <br /><br />
 <img class="chart" src="${url}" alt="chart" />
 <br /><br />
